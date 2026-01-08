@@ -226,3 +226,258 @@ The roadmap is **pattern-based, interview-focused**, and ordered for **maximum R
 **Target: MAANG Software Engineer interviews**
 
 ---
+
+# 🧠 DSA Formula & Shorthand Reference (MAANG Interviews)
+
+The goal is **recognition, not memorization** — knowing *when* and *why* to apply a formula.
+
+---
+
+## 📌 How to Use This
+
+- Use this as a **quick revision guide**
+- Refer to it while:
+  - Analyzing time complexity
+  - Solving array, string, tree, graph problems
+  - Explaining solutions during interviews
+- All formulas here have **high ROI** — no advanced math included
+
+---
+
+## 🔢 Arithmetic Series & Counting
+
+### 1. Sum of First N Natural Numbers
+
+> 1 + 2 + 3 + ... + n = n(n + 1) / 2
+
+**Used when:**
+- Counting total operations in nested loops
+- Calculating total subarrays / substrings
+- Solving missing number problems
+
+---
+
+### 2. Sum of First N Even Numbers
+
+> 2 + 4 + 6 + ... + 2n = n(n + 1)
+
+**Used when:**
+- Pattern-based counting
+- Mathematical reasoning problems
+
+---
+
+### 3. Sum of First N Odd Numbers
+
+> 1 + 3 + 5 + ... + (2n − 1) = n²
+
+**Used when:**
+- Pattern recognition
+- Square growth explanations
+
+---
+
+## 📊 Subarrays, Substrings & Pairs
+
+### 4. Total Subarrays of an Array
+
+> n(n + 1) / 2
+
+**Explanation:**
+Every element can be the start of multiple subarrays.
+
+**Used in:**
+- Brute force analysis
+- Sliding window reasoning
+
+---
+
+### 5. Total Substrings of a String
+
+> n(n + 1) / 2
+
+**Same logic as subarrays**, applied to strings.
+
+---
+
+### 6. Total Unique Pairs
+
+> n(n − 1) / 2
+
+**Used in:**
+- Pair counting problems
+- Two-sum brute force analysis
+- Graph edge counting
+
+---
+
+## 🔍 Logarithms (Binary Search & Trees)
+
+### 7. Binary Search Time Complexity
+
+> O(log₂ n)
+
+**Used when:**
+- Search space is halved every step
+- Arrays are sorted
+
+---
+
+### 8. Change of Base Rule
+
+> log_b n = log n / log b
+
+**Used when:**
+- Comparing logarithms
+- Simplifying complexity expressions
+
+---
+
+### 9. Bits Required to Represent a Number
+
+> ⌊log₂ n⌋ + 1
+
+**Used in:**
+- Bit manipulation
+- Binary representation problems
+
+---
+
+## 🌲 Binary Trees
+
+### 10. Maximum Nodes at Level L
+
+> 2^L
+
+**Used in:**
+- Level-order traversal
+- BFS problems
+
+---
+
+### 11. Maximum Nodes in a Binary Tree of Height H
+
+> 2^(H + 1) − 1
+
+**Used in:**
+- Tree capacity calculations
+- Complete binary tree problems
+
+---
+
+### 12. Height of a Balanced Binary Tree
+
+> log₂(n + 1) − 1
+
+**Used in:**
+- Height analysis
+- AVL / Red-Black trees
+
+---
+
+## 🔁 Recursion & Divide and Conquer
+
+### 13. Geometric Series
+
+> 1 + 2 + 4 + ... + 2^n = 2^(n + 1) − 1
+
+**Used in:**
+- Recursion tree analysis
+- Merge sort complexity
+- Binary tree traversals
+
+---
+
+## 🧮 Dynamic Programming
+
+### 14. Fibonacci Recurrence
+
+> F(n) = F(n − 1) + F(n − 2)
+
+**Used in:**
+- DP introduction
+- Overlapping subproblems explanation
+
+---
+
+### 15. Unique Paths in a Grid
+
+(m + n − 2) choose (m − 1)
+
+**Used in:**
+- Grid DP problems
+- Combinatorics-based solutions
+
+---
+
+## 🧠 Bit Manipulation
+
+### 16. Check if a Number Is Power of Two
+
+> n & (n − 1) == 0
+
+**Why it works:**
+- Powers of two have exactly one set bit
+
+---
+
+### 17. Lowest Set Bit
+
+
+> n & (-n)
+
+**Used in:**
+- Bit masking
+- Fenwick Tree (BIT)
+
+---
+
+### 18. Toggle kth Bit
+
+> n ^ (1 << k)
+
+**Used in:**
+- Bit flipping
+- State manipulation
+
+---
+
+## ⏱️ Complexity Recognition Patterns
+
+| Pattern                    | Time Complexity |
+|----------------------------|-----------------|
+| Single loop                | O(n)            |
+| Nested loops               | O(n²)           |
+| Binary search              | O(log n)        |
+| Divide by 2 recursion      | O(log n)        |
+| Merge sort                 | O(n log n)      |
+
+---
+
+## 🎯 Interview Conventions (Important)
+
+### Hash Table Operations
+
+> Average Case: O(1)
+> Worst Case: O(n)
+
+
+### Key Reminders
+- Subarrays / substrings → `n(n + 1) / 2`
+- Pairs → `n(n − 1) / 2`
+- Balanced trees → `log n`
+- Power of two → `n & (n − 1)`
+
+---
+
+## ✅ Final Notes
+
+- Interviewers expect **recognition**, not derivation
+- Use formulas to **justify complexity**
+- Always explain **why a formula applies**
+
+This README contains **all the math you need** for MAANG DSA interviews — nothing more, nothing less.
+
+---
+
+
